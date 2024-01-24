@@ -7,108 +7,118 @@ function Contact() {
   const [inputName, setInputName] = useState('');
   const [inputEmail, setInputEmail] = useState('');
   const [inputMessage, setInputMessage] = useState('');
+  const [nrequire, setnrequire] = useState('Name');
+  const [erequire, seterequire] = useState('Email');
+  const [mrequire, setmrequire] = useState('Message');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!eagerness) {
-      eagerness = 'low';
+    setInputName('');
+    setInputEmail('');
+    setInputMessage('');
+  };
+
+  const handleChange = (field, value) => {
+    if (field == "inputName"){
+      setInputName(value);
+      setnrequire("Name")
     }
-
-    props.onSubmit({
-      id: Math.random(Math.floor() * 1000),
-      text: input,
-      eagerness: eagerness,
-    });
-
-    setInput('');
-    setEagerness('');
+    if (field == "inputEmail"){
+      setInputEmail(value);
+      seterequire("Email")
+    }
+    if (field == "inputMessage"){
+      setInputMessage(value);
+      setmrequire("Message")
+    }    
+   
   };
 
-  const handleNameChange = (e) => {
-    setInputName(e.target.value);
+  const bluhandleChange = (field, value) => {
+    if (field == "inputName"){
+      if (value === ''){
+        setnrequire("Name is required")
+        return;
+      }
+    }   
+   
   };
 
-  const handleEmailChange = (e) => {
-    setInputEmail(e.target.value);
-  };
+  const b2luhandleChange = (field, value) => {  
+    if (field == "inputEmail"){
+       if (value === ''){
+        seterequire("Email is required")
+        return;
+      } else {
 
-  const handleMessageChange = (e) => {
-    setInputMessage(e.target.value);
-  };
-
+        let lastAtPos = value.lastIndexOf('@');
+        let lastDotPos = value.lastIndexOf('.');
   
+        if (!(lastAtPos < lastDotPos && lastAtPos > 0 && value.indexOf('@@') == -1 && lastDotPos > 2 && (value.length - lastDotPos) > 2)) {
+          seterequire("Email is not valid")
+        } else {
+          seterequire("Email")
+        }
+      }
+    }   
+  };
+
+  const b3luhandleChange = (field, value) => { 
+    if (field == "inputMessage"){
+      if (value === ''){
+        setmrequire("Message is required")
+        return;
+      }
+    }    
+   
+  };
+
+
+
+
 
   return (
      <div>
        <form className="contact-form" onSubmit={handleSubmit}>
-          <table>
-
-            <tr>
-              <td> <label>Name</label></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td> <input
+       
+       <h3>Contact</h3>   
+          <label className="Contact-input">{nrequire}</label> 
+          <input
                   type="text"
-                  placeholder="Name"
                   value={inputName}
+                  required
                   name="text"
-                  className="Contact-input-name"
-                  onChange={handleNameChange}
-                  ></input></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><label>Email</label></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td> <input
+                  className="Contact-input"
+                  onChange={e => handleChange('inputName', e.target.value)} 
+                  onBlur={e => bluhandleChange('inputName', e.target.value)} 
+                  
+          ></input>
+          <label className="Contact-input"> {erequire}</label>
+           <input
                   type="text"
-                  placeholder="Email Address"
                   value={inputEmail}
                   name="text"
-                  className="Contact-input-email"
-                  onChange={handleEmailChange}
-                  ></input></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td> <label>Message</label></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-            <td> <input
-                  type="text"
-                  placeholder="Message"
-                  value={inputEmail}
+                  required
+                  className="Contact-input"
+                  onChange={e => handleChange('inputEmail', e.target.value)} 
+                  onBlur={e => b2luhandleChange('inputEmail', e.target.value)} 
+          ></input>
+           <label className="Contact-input">{mrequire}</label> 
+           <textarea
+                  cols="50"
+                  rows="4"
+                  value={inputMessage}
+                  required
                   name="text"
-                  className="Contact-input-message"
-                  onChange={handleMessageChange}
-                  ></input></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td> <button className="contact-button">Send Message</button></td>
-              <td></td>
-              <td></td>
-              <td></td>
+                  className="Contact-input Contact-input-Message"
+                  onChange={e => handleChange('inputMessage', e.target.value)} 
+                  onBlur={e => b3luhandleChange('inputMessage', e.target.value)} 
+
+          ></textarea>
+           <p><button className="contact-button">Send Message</button></p>
              
-            </tr>
-          </table>         
+             
         </form> 
       </div>
 

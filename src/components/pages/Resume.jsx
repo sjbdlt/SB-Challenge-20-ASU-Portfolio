@@ -1,11 +1,25 @@
 function Resume() {
     return (
       <div>
-          <label>Name</label>
+          <h3>Resume</h3>   
+          
+        <a href="../public/StevenJBlake.pdf" target="_blank" download>Download</a>          
+         
+        <ul id="backgroundlist">
+                        <li><b>CSS</b> </li>
+                        <li><b>HTML</b> </li>
+                        <li><b>JAVASCRIPT</b> </li>                   
+                        <li><b>NODE.JS</b> </li>
+                        <li><b>EXPRESS.JS</b> </li>
+                        <li><b>SEQUELIZE</b> </li>  
+                        <li><b>REACT</b> </li>
+                        <li><b>VB.NET</b> </li>     
+                        <li><b>API</b> </li>
+                        <li><b>SQL</b> </li>
+                        <li><b>MONGODB</b> </li>
 
-          <label>Email</label>
-
-          <label>Message</label>
+         </ul>
+          
 
       </div>
     );

@@ -1,7 +1,9 @@
 function About() {
     return (
      <div>
-          <p> Some more information about </p>
+      <h3>About</h3>  
+      <img src="../src/assets/images/SB.jpg" alt="headshot of steven blake" />
+          <p> 2 Decades of Project Management, Support Department Management,  and Software Development experience.  </p>
           <ul id="backgroundlist">
                         <li><b>Born:</b> New Jersey</li>
                         <li><b>Home town:</b> Rochester, NY</li>

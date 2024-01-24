@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Navigation from './Navigation';
+
 import Header from './Header';
 import Footer from './Footer';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import About from './pages/About';
-
 export default function HomeContainer() {
 
    const [currentPage, setcurrentPage] = useState('About');
@@ -28,8 +28,8 @@ export default function HomeContainer() {
 
     return (
         <div>        
-        <Header /> 
-        <Navigation currentPage={currentPage} changeToPage={changeToPage} />
+        {/* <Header currentPage={currentPage} changeToPage={changeToPage}/>  */}
+        <Navigation currentPage={currentPage} changeToPage={changeToPage} />     
         <main>{renderPage()}</main>
         <Footer />
         </div>
