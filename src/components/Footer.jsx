@@ -9,7 +9,7 @@ function Footer() {
         {" "}
         <img
           className="foota"
-          src="src/assets/images/linkedin_icon.png"
+          src="linkedin_icon.png"
           alt="Linkin"
         />
       </a>
@@ -17,13 +17,13 @@ function Footer() {
         {" "}
         <img
           className="foota"
-          src="src/assets/images/github-icon.png"
+          src="github-icon.png"
           alt="GitHub"
         />
       </a>
       <a className="footitem" href="https://twitter.com/sjbdlt" target="_blank">
         {" "}
-        <img className="foota" src="src/assets/images/x-icon.png" alt="X" />
+        <img className="foota" src="x-icon.png" alt="X" />
       </a>
     </footer>
   );

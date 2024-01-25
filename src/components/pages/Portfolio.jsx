@@ -17,7 +17,7 @@ function Portfolio() {
           >
             <img
               className="pimage"
-              src="../src/assets/images/NoteTaker.png"
+              src="NoteTaker.png"
               alt="Note Taker Project"
             />
           </a>
@@ -33,7 +33,7 @@ function Portfolio() {
             {" "}
             <img
               className="portsubitem1"
-              src="src/assets/images/github-icon.png"
+              src="github-icon.png"
               alt="GitHub"
             />
           </a>
@@ -50,7 +50,7 @@ function Portfolio() {
           >
             <img
               className="pimage"
-              src="../src/assets/images/TechBlog.jpg"
+              src="TechBlog.jpg"
               alt="Tech Blog"
             />
           </a>
@@ -65,7 +65,7 @@ function Portfolio() {
             {" "}
             <img
               className="portsubitem1"
-              src="src/assets/images/github-icon.png"
+              src="github-icon.png"
               alt="GitHub"
             />
           </a>
@@ -81,7 +81,7 @@ function Portfolio() {
           >
             <img
               className="pimage"
-              src="../src/assets/images/WeatherOpen.png"
+              src="WeatherOpen.png"
               alt="Weather Site"
             />
           </a>
@@ -96,7 +96,7 @@ function Portfolio() {
             {" "}
             <img
               className="portsubitem1"
-              src="src/assets/images/github-icon.png"
+              src="github-icon.png"
               alt="GitHub"
             />
           </a>
@@ -112,7 +112,7 @@ function Portfolio() {
           >
             <img
               className="pimage"
-              src="../src/assets/images/Jate.png"
+              src="Jate.png"
               alt="Jate PWA"
             />
           </a>
@@ -127,7 +127,7 @@ function Portfolio() {
             {" "}
             <img
               className="portsubitem1"
-              src="src/assets/images/github-icon.png"
+              src="github-icon.png"
               alt="GitHub"
             />
           </a>
@@ -143,7 +143,7 @@ function Portfolio() {
           >
             <img
               className="pimage"
-              src="../src/assets/images/moviepicker.png"
+              src="moviepicker.png"
               alt="Project 1"
             />
           </a>
@@ -158,7 +158,7 @@ function Portfolio() {
             {" "}
             <img
               className="portsubitem1"
-              src="src/assets/images/github-icon.png"
+              src="github-icon.png"
               alt="GitHub"
             />
           </a>
@@ -174,7 +174,7 @@ function Portfolio() {
           >
             <img
               className="pimage"
-              src="../src/assets/images/LocalBrewery.png"
+              src="LocalBrewery.png"
               alt="Project 2"
             />
           </a>
@@ -189,7 +189,7 @@ function Portfolio() {
             {" "}
             <img
               className="portsubitem1"
-              src="src/assets/images/github-icon.png"
+              src="github-icon.png"
               alt="GitHub"
             />
           </a>
