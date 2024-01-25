@@ -1,4 +1,7 @@
-function Resume() {
+
+function Resume() {   
+  
+
   return (
     <div>
       <h3>Resume</h3>
@@ -6,7 +9,7 @@ function Resume() {
       <a
         id="resumedownload"
         title="Download Steven Resume"
-        href="../public/StevenJBlake.pdf"
+        href="StevenJBlake.pdf"
         target="_blank"
         download
       >
