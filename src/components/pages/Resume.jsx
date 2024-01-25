@@ -6,7 +6,7 @@ function Resume() {
       <a
         id="resumedownload"
         title="Download Steven Resume"
-        href="./assets/StevenJBlake.pdf"
+        href="../public/StevenJBlake.pdf"
         target="_blank"
         download
       >

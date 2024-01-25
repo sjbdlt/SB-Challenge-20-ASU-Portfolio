@@ -65,7 +65,7 @@ Verified the app opens and you can install it offline
 ### User ID - SJBDLT,
 ### User Email - sblake@blakeis.com
 
-netlify - https://cool-zabaione-b58e27.netlify.app/
+netlify - https://sblake-portfolio.netlify.app/
 
 repo - https://github.com/sjbdlt/SB-Challenge-20-ASU-Portfolio.git
 
