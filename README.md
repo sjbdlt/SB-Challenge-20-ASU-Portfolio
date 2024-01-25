@@ -18,6 +18,12 @@
 
    In this highly competive market of developers, i need a unique or impressive page to help show my talents. I want the page that will catch a employers attention and spark their interest in contacting me.
 
+
+![wireframe](src/assets/Images/Screenshot%20Home.png)
+![wireframe](src/assets/Images/Screenshot%20Porfolio.png)
+![wireframe](src/assets/Images/Screenshot%20Contact.png)
+![wireframe](src/assets/Images/Screenshot%20Resume.png)
+
 ## CONTENT:
 
 * [DESCRIPTION](#description)
@@ -59,7 +65,7 @@ Verified the app opens and you can install it offline
 ### User ID - SJBDLT,
 ### User Email - sblake@blakeis.com
 
-netlify - 
+netlify - https://cool-zabaione-b58e27.netlify.app/
 
 repo - https://github.com/sjbdlt/SB-Challenge-20-ASU-Portfolio.git
 
