@@ -2,7 +2,7 @@ function About() {
   return (
     <div>
       <h3>About</h3>
-      <img src="../src/assets/images/SB.jpg" alt="headshot of steven blake" />
+      <img src="../src/assets/static/images/SB.jpg" alt="headshot of steven blake" />
       <p>
         {" "}
         2 Decades of Project Management, Support Department Management, and
