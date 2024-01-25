@@ -16,6 +16,7 @@
   
   h1 {
     font-size: 48px;
+    color: navy;
     line-height: 1.1;
   }
   
@@ -25,7 +26,7 @@
     text-decoration: inherit;
   }
   a:hover {
-    color: #535bf2;
+    color: yellow;
   }
 
   .nav-tabs {
@@ -49,14 +50,68 @@
     padding: 10px;
     text-align: center;
   }
-
-  .pimage{
-    height: 200px;
-    width: 250px;
-  }
+ 
 
   .foota {
     height: 20px;
     width:  20px;
     margin-top: 5px;
   }
+
+  .footitem:hover {
+    background-color: white;
+  }
+
+  #resumedownload{
+    font-size: 20px;
+  }
+
+  #resumedownload:hover{
+    color: yellow;
+    background-color: darkgrey;
+  }
+
+  .Contact-input {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+h3 {
+ font-size: 24px;
+ 
+}
+
+.Contact-input-Message{
+ width: 400px;
+ height: 200px;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+  .header {
+    background-color: darkgrey;
+    height: 100px;
+  } 
+  
+  h1 {
+    font-size: 30px;
+    color: navy;
+    line-height: 1.1;
+  }
+  
+
+  .nav-tabs {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+  }
+
+  .nav-item {
+    padding: 5px;
+    font-size: large;
+    
+  }
+}
